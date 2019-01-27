@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CdkDropList } from '@angular/cdk/drag-drop';
+import { CityCard } from '../../shared/city-card.model';
 
 @Component({
   selector: 'app-tracker-list',
@@ -7,9 +8,9 @@ import { CdkDropList } from '@angular/cdk/drag-drop';
   styleUrls: ['./tracker-list.component.css']
 })
 export class TrackerListComponent implements OnInit {
-  constructor() { }
+  @Input()
+  cityCardList: CityCard[] = [];
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

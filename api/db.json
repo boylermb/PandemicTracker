@@ -1,3 +1,19 @@
 {
-
+  "cityCardList": [
+    {
+      "id": 1,
+      "name": "New York",
+      "color": "Blue"
+    },
+    {
+      "id": 1,
+      "name": "Chicago",
+      "color": "Blue"
+    },
+    {
+      "id": 1,
+      "name": "Hong Kong",
+      "color": "Red"
+    }
+  ]
 }

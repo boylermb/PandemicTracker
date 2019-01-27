@@ -8,13 +8,11 @@ import { MaterialModule } from './materialimports.module';
 import { TrackerModule } from './tracker/tracker.module';
 import { HomeContainerComponent } from './home/home-container/home-container.component';
 import { HomeModule } from './home/home.module';
-import { TrackerContainerComponent } from './tracker/tracker-container/tracker-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeContainerComponent,
-    TrackerContainerComponent
+    HomeContainerComponent
   ],
   imports: [
     BrowserModule,

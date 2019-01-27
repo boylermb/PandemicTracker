@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CityCard } from 'src/app/shared/city-card.model';
 
 @Component({
   selector: 'app-tracker-list-item',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tracker-list-item.component.css']
 })
 export class TrackerListItemComponent implements OnInit {
+  @Input()
+  cityCard: CityCard;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
