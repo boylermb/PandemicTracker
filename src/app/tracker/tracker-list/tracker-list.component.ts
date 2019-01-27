@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CdkDropList } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-tracker-list',
@@ -6,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tracker-list.component.css']
 })
 export class TrackerListComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
