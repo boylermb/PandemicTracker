@@ -4,6 +4,15 @@
   [cdkDropListData]="cityCardList"
   (cdkDropListDropped)="drop($event)"
 >
-  <app-tracker-list-item cdkDrag [cityCard]="cityCard" *ngFor="let cityCard of cityCardList" class="example-box" >
-</app-tracker-list-item>
+  <app-tracker-list-item
+    cdkDrag
+    [cityCard]="cityCard"
+    *ngFor="let cityCard of cityCardList"
+    class="example-box"
+    [style.backgroundImage]="
+      'url(../../../../../assets/img/' + cityCard.color + ')'
+    "
+    style="background-size: contain; background-repeat: no-repeat;"
+  >
+  </app-tracker-list-item>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CityCard } from 'src/app/shared/city-card.model';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { CardBackground } from 'src/app/shared/card-background.enum';
 
 @Component({
   selector: 'app-tracker-container',
@@ -9,14 +10,14 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 })
 export class TrackerContainerComponent implements OnInit {
   cityCardList: CityCard[] = [
-    new CityCard(1, 'New York', 'Blue'),
-    new CityCard(1, 'Chicago', 'Blue'),
-    new CityCard(1, 'Hong Kong', 'Red')
+    new CityCard(1, 'New York', CardBackground.BLUE),
+    new CityCard(1, 'Chicago', CardBackground.BLUE),
+    new CityCard(1, 'Hong Kong', CardBackground.RED)
   ];
   cityCardList2: CityCard[] = [
-    new CityCard(1, 'New York', 'Blue'),
-    new CityCard(1, 'Chicago', 'Blue'),
-    new CityCard(1, 'Hong Kong', 'Red')
+    new CityCard(1, 'New York', CardBackground.BLUE),
+    new CityCard(1, 'Chicago', CardBackground.BLUE),
+    new CityCard(1, 'Hong Kong', CardBackground.RED)
   ];
   constructor() {}
 
