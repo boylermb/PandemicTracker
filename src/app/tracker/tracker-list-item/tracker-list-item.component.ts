@@ -12,4 +12,5 @@ export class TrackerListItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
 }

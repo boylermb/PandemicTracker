@@ -1,2 +1,7 @@
 <h1>TRACKER</h1>
-<app-tracker-list [cityCardList]="cityCardList"></app-tracker-list>
+<div cdkDropListGroup class="example-container">
+  <h5>List 1</h5>
+  <app-tracker-list [cityCardList]="cityCardList"></app-tracker-list>
+  <h5>List 2</h5>
+  <app-tracker-list [cityCardList]="cityCardList2"></app-tracker-list>
+</div>

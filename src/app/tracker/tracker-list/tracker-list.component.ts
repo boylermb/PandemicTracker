@@ -1,6 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CdkDropList } from '@angular/cdk/drag-drop';
 import { CityCard } from '../../shared/city-card.model';
+import {
+  CdkDragDrop,
+  moveItemInArray,
+  transferArrayItem
+} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-tracker-list',
@@ -13,4 +17,21 @@ export class TrackerListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  drop(event: CdkDragDrop<CityCard[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    } else {
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    }
+  }
 }
