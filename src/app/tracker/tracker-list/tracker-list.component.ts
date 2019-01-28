@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CityCard } from '../../shared/city-card.model';
+import { CityCard } from '../shared/city-card.model';
 import {
   CdkDragDrop,
   moveItemInArray,

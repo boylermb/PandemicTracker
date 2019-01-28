@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CityCard } from 'src/app/shared/city-card.model';
+import { CityCard } from 'src/app/tracker/shared/city-card.model';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { CardBackground } from 'src/app/shared/card-background.enum';
+import { CardBackground } from 'src/app/tracker/shared/card-background.enum';
 
 @Component({
   selector: 'app-tracker-container',
