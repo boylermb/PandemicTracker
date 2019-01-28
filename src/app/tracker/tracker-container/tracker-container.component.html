@@ -1,7 +1,10 @@
-<h1>TRACKER</h1>
-<div cdkDropListGroup class="example-container">
-  <h5>List 1</h5>
-  <app-tracker-list [cityCardList]="cityCardList"></app-tracker-list>
-  <h5>List 2</h5>
-  <app-tracker-list [cityCardList]="cityCardList2"></app-tracker-list>
+<div cdkDropListGroup>
+  <div class="example-container">
+    <h5>Infection Deck</h5>
+    <app-tracker-list [cityCardList]="cityCardList"></app-tracker-list>
+  </div>
+  <div class="example-container" style="float:right;">
+    <h5>Discard Pile</h5>
+    <app-tracker-list [cityCardList]="cityCardList2"></app-tracker-list>
+  </div>
 </div>

@@ -5,7 +5,6 @@ import {
   moveItemInArray,
   transferArrayItem
 } from '@angular/cdk/drag-drop';
-import { CardBackground } from 'src/app/tracker/shared/card-background.enum';
 import { TrackerService } from '../tracker.service';
 
 @Component({
