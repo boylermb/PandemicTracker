@@ -8,6 +8,7 @@ import { MaterialModule } from './materialimports.module';
 import { TrackerModule } from './tracker/tracker.module';
 import { HomeContainerComponent } from './home/home-container/home-container.component';
 import { HomeModule } from './home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeModule } from './home/home.module';
     BrowserAnimationsModule,
     MaterialModule,
     TrackerModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

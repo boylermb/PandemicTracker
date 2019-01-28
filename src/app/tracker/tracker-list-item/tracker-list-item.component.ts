@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CityCard } from 'src/app/tracker/shared/city-card.model';
-import { CardBackground } from '../shared/card-background.enum';
 
 @Component({
   selector: 'app-tracker-list-item',
