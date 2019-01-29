@@ -15,6 +15,8 @@ export class TrackerContainerComponent implements OnInit {
   ngOnInit() {
     this.trackerService.list().subscribe(data => {
       this.cityCardList = data;
+    });
+    this.trackerService.list().subscribe(data => {
       this.cityCardList2 = data;
     });
   }
