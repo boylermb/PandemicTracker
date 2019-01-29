@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CityCard } from 'src/app/tracker/shared/city-card.model';
-import {
-  CdkDragDrop,
-  moveItemInArray,
-  transferArrayItem
-} from '@angular/cdk/drag-drop';
 import { TrackerService } from '../tracker.service';
 
 @Component({
@@ -22,22 +17,5 @@ export class TrackerContainerComponent implements OnInit {
       this.cityCardList = data;
       this.cityCardList2 = data;
     });
-  }
-
-  drop(event: CdkDragDrop<CityCard[]>) {
-    if (event.previousContainer === event.container) {
-      moveItemInArray(
-        event.container.data,
-        event.previousIndex,
-        event.currentIndex
-      );
-    } else {
-      transferArrayItem(
-        event.previousContainer.data,
-        event.container.data,
-        event.previousIndex,
-        event.currentIndex
-      );
-    }
   }
 }
