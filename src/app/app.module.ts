@@ -9,6 +9,7 @@ import { TrackerModule } from './tracker/tracker.module';
 import { HomeContainerComponent } from './home/home-container/home-container.component';
 import { HomeModule } from './home/home.module';
 import { HttpClientModule } from '@angular/common/http';
+import { GameLogModule } from './game-log/game-log.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    GameLogModule,
     MaterialModule,
     TrackerModule,
     HomeModule,

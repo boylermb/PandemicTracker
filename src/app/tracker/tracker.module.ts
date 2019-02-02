@@ -6,20 +6,15 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TrackerListComponent } from './tracker-list/tracker-list.component';
 import { TrackerListItemComponent } from './tracker-list-item/tracker-list-item.component';
 import { TrackerContainerComponent } from './tracker-container/tracker-container.component';
-import { GameLogContainerComponent } from '../game-log/game-log-container/game-log-container.component';
-import { GameLogControlsComponent } from '../game-log/game-log-controls/game-log-controls.component';
+import { GameLogModule } from '../game-log/game-log.module';
 
 @NgModule({
   declarations: [
     TrackerContainerComponent,
     TrackerListComponent,
-    TrackerListItemComponent,
-    GameLogContainerComponent,
-    GameLogControlsComponent
+    TrackerListItemComponent
   ],
-  imports: [CommonModule, TrackerRoutingModule, DragDropModule],
-  exports: [
-    TrackerContainerComponent
-  ]
+  imports: [CommonModule, TrackerRoutingModule, DragDropModule, GameLogModule],
+  exports: [TrackerContainerComponent]
 })
 export class TrackerModule {}
