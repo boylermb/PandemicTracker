@@ -13,7 +13,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   left: 50%;
   border: solid 1px #ccc;
   color: rgba(0, 0, 0, 0.87);
-  cursor: move;
   display: flex;
   text-align: center;
   background: #fff;
@@ -29,6 +28,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
               0 8px 10px 1px rgba(0, 0, 0, 0.14),
               0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.log-control {
+  cursor: pointer;
 }
 
 .example-container {

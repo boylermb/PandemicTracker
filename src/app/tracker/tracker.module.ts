@@ -7,6 +7,7 @@ import { TrackerListComponent } from './tracker-list/tracker-list.component';
 import { TrackerListItemComponent } from './tracker-list-item/tracker-list-item.component';
 import { TrackerContainerComponent } from './tracker-container/tracker-container.component';
 import { GameLogModule } from '../game-log/game-log.module';
+import { MaterialModule } from '../materialimports.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { GameLogModule } from '../game-log/game-log.module';
     TrackerListComponent,
     TrackerListItemComponent
   ],
-  imports: [CommonModule, TrackerRoutingModule, DragDropModule, GameLogModule],
+  imports: [CommonModule, TrackerRoutingModule, DragDropModule, GameLogModule, MaterialModule],
   exports: [TrackerContainerComponent]
 })
 export class TrackerModule {}

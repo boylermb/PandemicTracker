@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-log-controls.component.css']
 })
 export class GameLogControlsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  stepForward() {
+    console.log('step forward clicked');
   }
 
+  stepBack() {
+    console.log('step back clicked');
+  }
 }
