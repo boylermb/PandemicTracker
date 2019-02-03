@@ -20,4 +20,6 @@ export class TrackerContainerComponent implements OnInit {
       this.cityCardList2 = data;
     });
   }
+
+
 }

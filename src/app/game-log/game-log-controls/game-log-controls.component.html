@@ -1,4 +1,6 @@
-<mat-icon class="log-control" click="stepBack()">skip_previous</mat-icon>
-<mat-icon class="log-control" click="stepForward()">skip_next</mat-icon>
-
-
+<button mat-icon-button (click)="stepBack()">
+  <mat-icon class="log-control">skip_previous</mat-icon>
+</button>
+<button mat-icon-button (click)="stepForward()">
+  <mat-icon class="log-control">skip_next</mat-icon>
+</button>

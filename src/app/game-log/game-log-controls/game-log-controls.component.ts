@@ -17,4 +17,5 @@ export class GameLogControlsComponent implements OnInit {
   stepBack() {
     console.log('step back clicked');
   }
+
 }
