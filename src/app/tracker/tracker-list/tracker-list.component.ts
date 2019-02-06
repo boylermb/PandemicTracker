@@ -36,4 +36,7 @@ export class TrackerListComponent implements OnInit {
       );
     }
   }
+
+  addItem() {
+  }
 }
