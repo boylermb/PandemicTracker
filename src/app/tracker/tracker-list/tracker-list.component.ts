@@ -12,8 +12,10 @@ import {
   styleUrls: ['./tracker-list.component.css']
 })
 export class TrackerListComponent implements OnInit {
-  @Input()
-  cityCardList: CityCard[] = [];
+  @Input() cityCardList: CityCard[] = [];
+
+  @Input() title: string;
+
   constructor() {}
 
   ngOnInit() {}

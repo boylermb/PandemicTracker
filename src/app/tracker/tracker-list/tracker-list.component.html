@@ -1,9 +1,11 @@
+
 <div
   cdkDropList
   class="example-list"
   [cdkDropListData]="cityCardList"
   (cdkDropListDropped)="drop($event)"
 >
+<mat-toolbar color="primary" style="max-height: 2em">{{title}}</mat-toolbar>
   <app-tracker-list-item
     cdkDrag
     [cityCard]="cityCard"

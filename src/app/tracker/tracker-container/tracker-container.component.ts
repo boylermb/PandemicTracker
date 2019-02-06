@@ -10,6 +10,10 @@ import { TrackerService } from '../tracker.service';
 export class TrackerContainerComponent implements OnInit {
   cityCardList: CityCard[];
   cityCardList2: CityCard[];
+  discardPileTitle = 'Discard Pile';
+
+  infectionDeckTitle = 'Infection Deck';
+
   constructor(private trackerService: TrackerService) {}
 
   ngOnInit() {
