@@ -8,14 +8,22 @@ import { TrackerListItemComponent } from './tracker-list-item/tracker-list-item.
 import { TrackerContainerComponent } from './tracker-container/tracker-container.component';
 import { GameLogModule } from '../game-log/game-log.module';
 import { MaterialModule } from '../materialimports.module';
+import { AddCityDialogComponent } from './add-city-dialog/add-city-dialog.component';
 
 @NgModule({
   declarations: [
     TrackerContainerComponent,
     TrackerListComponent,
-    TrackerListItemComponent
+    TrackerListItemComponent,
+    AddCityDialogComponent
   ],
-  imports: [CommonModule, TrackerRoutingModule, DragDropModule, GameLogModule, MaterialModule],
+  imports: [
+    CommonModule,
+    TrackerRoutingModule,
+    DragDropModule,
+    GameLogModule,
+    MaterialModule
+  ],
   exports: [TrackerContainerComponent]
 })
 export class TrackerModule {}

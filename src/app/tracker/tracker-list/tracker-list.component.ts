@@ -5,6 +5,8 @@ import {
   moveItemInArray,
   transferArrayItem
 } from '@angular/cdk/drag-drop';
+import { AddCityDialogComponent } from '../add-city-dialog/add-city-dialog.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-tracker-list',
@@ -16,7 +18,7 @@ export class TrackerListComponent implements OnInit {
 
   @Input() title: string;
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}
 
@@ -38,5 +40,16 @@ export class TrackerListComponent implements OnInit {
   }
 
   addItem() {
+    const dialogRef = this.dialog.open(AddCityDialogComponent, {
+      width: '250px', height: '350px', position: {
+        top: '100px',
+        left: '450px',
+      },
+      // data: CityMaker.create("","")
+    });
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   this.infectionDeck.push(result);
+    // });
   }
 }
