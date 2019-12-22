@@ -7,14 +7,15 @@ import {
 } from '@angular/cdk/drag-drop';
 import { AddCityDialogComponent } from '../add-city-dialog/add-city-dialog.component';
 import { MatDialog } from '@angular/material';
-
+import { CardBackground } from '../shared/card-background.enum';
 @Component({
   selector: 'app-tracker-list',
   templateUrl: './tracker-list.component.html',
   styleUrls: ['./tracker-list.component.css']
 })
 export class TrackerListComponent implements OnInit {
-  @Input() cityCardList: CityCard[] = [];
+  @Input() cityCardList: CityCard[];
+
 
   @Input() title: string;
 
@@ -45,11 +46,11 @@ export class TrackerListComponent implements OnInit {
         top: '100px',
         left: '450px',
       },
-      // data: CityMaker.create("","")
+      data: new CityCard(1,'',CardBackground.RED)
     });
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   this.infectionDeck.push(result);
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      this.cityCardList.push(result);
+    });
   }
 }

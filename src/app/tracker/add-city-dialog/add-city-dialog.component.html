@@ -5,9 +5,8 @@
   </mat-form-field>
   <mat-form-field>
       <mat-select placeholder="Select Color" [(ngModel)]="data.color" >
-          <!-- <mat-option *ngFor="let card of cards"  [value]= "card.value">{{card.viewValue}}</mat-option> -->
-          <mat-option >RED</mat-option>
-
+          <mat-option *ngFor="let card of cardBackgrounds | keyvalue" [value]= "card">{{card.key}}</mat-option>
+          
         </mat-select>
     </mat-form-field>
 </div>

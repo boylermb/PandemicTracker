@@ -9,6 +9,7 @@ import { TrackerContainerComponent } from './tracker-container/tracker-container
 import { GameLogModule } from '../game-log/game-log.module';
 import { MaterialModule } from '../materialimports.module';
 import { AddCityDialogComponent } from './add-city-dialog/add-city-dialog.component';
+import { MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -16,14 +17,17 @@ import { AddCityDialogComponent } from './add-city-dialog/add-city-dialog.compon
     TrackerListComponent,
     TrackerListItemComponent,
     AddCityDialogComponent
-  ],
+      ],
+  entryComponents:[AddCityDialogComponent],
   imports: [
     CommonModule,
     TrackerRoutingModule,
     DragDropModule,
     GameLogModule,
-    MaterialModule
+    MaterialModule,
+    MatInputModule
   ],
-  exports: [TrackerContainerComponent]
+  exports: [TrackerContainerComponent,
+  AddCityDialogComponent]
 })
 export class TrackerModule {}
